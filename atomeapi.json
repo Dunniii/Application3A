@@ -1,0 +1,30 @@
+{
+   "count":118,
+   "next":"https://raw.githubusercontent.com/Dunniii/Application3A/master/atomeapi.json/?offset=20&limit=20",
+   "results":[
+      {
+         "name":"Hydrogène",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/1/"
+      },
+      {
+         "name":"Hélium",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/2/"
+      },
+      {
+         "name":"Lithium",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/3/"
+      },
+      {
+         "name":"Beryllium",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/4/"
+      },
+      {
+         "name":"Bore",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/5/"
+      },
+      {
+         "name":"Carbone",
+         "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/6/"
+      }
+   ]
+}
