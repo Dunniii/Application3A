@@ -27,6 +27,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String BASE_URL = "https://pokeapi.co/";
     private RecyclerView recyclerView;
     private ListAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -36,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
 
+        showList();
+        makeApiCall();
+    }
+
+    private void showList(){
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
 
@@ -48,5 +54,44 @@ public class MainActivity extends AppCompatActivity {
         }
         mAdapter = new ListAdapter(input);
         recyclerView.setAdapter(mAdapter);
+    }
+
+
+    private void makeApiCall(){
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create(gson))
+                .build();
+
+        PokeApi pokeApi = retrofit.create(PokeApi.class);
+
+        Call<RestPokemonResponse> call = pokeApi.getPokemonResponse();
+        call.enqueue( new Callback<RestPokemonResponse> (){
+            @Override
+            public void onResponse(Call<RestPokemonResponse> call, Response<RestPokemonResponse> response) {
+                if(response.isSuccessful() && response.body() != null){
+                    List<Pokemon> pokemonList= response.body().getResults();
+
+                    Toast.makeText(getApplicationContext(),"API Sucess",Toast.LENGTH_SHORT).show();
+                }else{
+                    showError();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<RestPokemonResponse> call, Throwable t) {
+                showError();
+            }
+
+
+        });
+
+    }
+    private void showError(){
+        Toast.makeText(getApplicationContext(),"API ERROR", Toast.LENGTH_SHORT).show();
     }
 }
