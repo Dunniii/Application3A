@@ -1,0 +1,19 @@
+
+   "count":118,
+   "next":"https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
+   "results":[
+      {
+         "name":"Hydrogène",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/atome_api.json/1/"
+      },
+      {
+         "name":"Hélium",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/atome_api.json/2/"
+      },
+      {
+         "name":"Lithium",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/atome_api.json/3/"
+      },
+      
+   ]
+}
