@@ -61,7 +61,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
         final Atome currentAtome = values.get(position);
         holder.txtHeader.setText(currentAtome.getName());
-        holder.txtFooter.setText(currentAtome.getUrl());
+        holder.txtFooter.setText(currentAtome.getNumero());
         holder.txtHeader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
