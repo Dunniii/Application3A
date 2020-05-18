@@ -27,7 +27,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String BASE_URL = "https://pokeapi.co/";
+    private static final String BASE_URL = "https://raw.githubusercontent.com/Dunniii/Application3A/master/";
     private RecyclerView recyclerView;
     private ListAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -67,14 +67,14 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        PokeApi pokeApi = retrofit.create(PokeApi.class);
+        AtomeApi atomeApi = retrofit.create(AtomeApi.class);
 
-        Call<RestPokemonResponse> call = pokeApi.getPokemonResponse();
-        call.enqueue( new Callback<RestPokemonResponse> (){
+        Call<RestAtomeResponse> call = atomeApi.getAtomeResponse();
+        call.enqueue( new Callback<RestAtomeResponse> (){
             @Override
-            public void onResponse(Call<RestPokemonResponse> call, Response<RestPokemonResponse> response) {
+            public void onResponse(Call<RestAtomeResponse> call, Response<RestAtomeResponse> response) {
                 if(response.isSuccessful() && response.body() != null){
-                    List<Pokemon> pokemonList= response.body().getResults();
+                    List<Atome> atomeList= response.body().getResults();
 
                     Toast.makeText(getApplicationContext(),"API Sucess",Toast.LENGTH_SHORT).show();
                 }else{
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<RestPokemonResponse> call, Throwable t) {
+            public void onFailure(Call<RestAtomeResponse> call, Throwable t) {
                 showError();
             }
 
