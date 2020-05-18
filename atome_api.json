@@ -1,6 +1,6 @@
 
    "count":118,
-   "next":"https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
+   "next":"https://raw.githubusercontent.com/Dunniii/Application3A/master/atome_api.json/?offset=20&limit=20",
    "results":[
       {
          "name":"Hydrogène",
