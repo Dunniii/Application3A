@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.application3a.Constants;
-//import com.example.application3a.ListAdapter;
+import com.example.application3a.Singletons;
 import com.example.application3a.R;
 import com.example.application3a.data.AtomeApi;
 import com.example.application3a.presentation.model.Atome;
@@ -49,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView ( R.layout.activity_main );
 
         controller = new MainController(
-                this, new GsonBuilder ()
-                        .setLenient ()
-                        .create (),
-                getSharedPreferences ( "application_esiea", Context.MODE_PRIVATE )
+                this,Singletons.getGson(),
+                Singletons.getSharedPreferences(getApplicationContext())
         );
         controller.onStart();
 

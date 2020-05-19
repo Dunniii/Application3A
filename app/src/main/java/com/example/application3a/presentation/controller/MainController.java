@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.application3a.Constants;
-//import com.example.application3a.ListAdapter;
+import com.example.application3a.Singletons;
 import com.example.application3a.R;
 import com.example.application3a.data.AtomeApi;
 import com.example.application3a.presentation.model.Atome;
@@ -51,9 +51,6 @@ public class MainController {
 
     public void onStart(){
 
-
-
-
         List<Atome> atomeList =getDataFromCache();
 
         if (atomeList != null) {
@@ -67,14 +64,7 @@ public class MainController {
     private void makeApiCall(){
 
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(Constants.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create(gson))
-                .build();
-
-        AtomeApi atomeApi = retrofit.create(AtomeApi.class);
-
-        Call<RestAtomeResponse> call = atomeApi.getAtomeResponse();
+        Call<RestAtomeResponse> call = Singletons.getAtomeApi().getAtomeResponse();
         call.enqueue( new Callback<RestAtomeResponse> (){
             @Override
             public void onResponse(Call<RestAtomeResponse> call, Response<RestAtomeResponse> response) {
