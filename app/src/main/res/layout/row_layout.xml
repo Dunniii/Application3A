@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/imageicon"
+        android:id="@+id/icon"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_alignParentTop="true"
@@ -28,7 +28,7 @@
         android:layout_height="26dip"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/imageicon"
+        android:layout_toRightOf="@id/icon"
         android:background="#D3C9C9"
         android:backgroundTint="#5BFFFFFF"
         android:ellipsize="marquee"
@@ -45,7 +45,7 @@
         android:layout_above="@id/secondLine"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_toRightOf="@id/imageicon"
+        android:layout_toRightOf="@id/icon"
         android:background="#D3C9C9"
         android:backgroundTint="#5BFFFFFF"
         android:gravity="center_vertical"

@@ -69,7 +69,7 @@ public class DescriptionActivity extends AppCompatActivity{
     public void showDetail(Atome atome){
         titre.setText(atome.getName());
         description.setText(atome.getDescription());
-        //Picasso.get().load(atome.getUrl()).fit.into(icon);
+        Picasso.get().load(atome.getUrl()).fit().into(icon);
     }
 
     public void backToList(){

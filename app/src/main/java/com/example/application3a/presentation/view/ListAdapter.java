@@ -74,7 +74,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         final Atome currentAtome = values.get(position);
         holder.txtHeader.setText(currentAtome.getName());
         holder.txtFooter.setText(currentAtome.getNumero());
-        //Picasso.get().load(currentAtome.getUrl()).fit().into(holder.icon);
+        Picasso.get().load(currentAtome.getUrl()).fit().into(holder.icon);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
