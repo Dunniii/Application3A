@@ -20,18 +20,15 @@ https://github.com/Dunniii/Application3A/
 
 ## Screens
 
-### Premier Ecran (SplashScreen)
+### Premier Ecran (Liste RecyclerView)
 
 - Affiche  une liste
 <img src="screen/Screen.png" width="540" height="960" alt="Screen.png">
 
-### Second Ecran (Liste RecyclerView)
+### Second Ecran (Détail)
 
 - Affiche la liste des Pokemon
 <img src="screen/screen2.png" width="540" height="960" alt="screen2.png">
 
-### Troisième Ecran (Details Elément)
 
-- Affiche le détail d'un élément de la liste
-<img src="screen/screen3.png" width="540" height="960" alt="screen3.png">
 
