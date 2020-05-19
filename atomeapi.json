@@ -37,6 +37,18 @@
          "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/carbone%20.png",
          "numero":"6",
          "description":"Son symbole est C et son découvreur est inconnu"
+      },
+      {
+         "name":"Azote",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/azote.jpg",
+         "numero":"7",
+         "description":"Son symbole est N et son découvreur est Rutherford"
+      },
+      {
+         "name":"Oxygène",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/oxyg.png",
+         "numero":"8",
+         "description":"Son symbole est 0 et son découvreur est Priestley et Scheele"
       }
    ]
 }
