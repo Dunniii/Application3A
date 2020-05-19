@@ -4,7 +4,7 @@
    "results":[
       {
          "name":"Hydrogène",
-         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/hydro.jpeg",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/hydro.png",
          "numero":"1",
          "description":"Son symbole est H et son découvreur est Cavendish"
       },
@@ -16,7 +16,7 @@
       },
       {
          "name":"Lithium",
-         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/lith.jpg",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/lithium.jpg",
          "numero":"3",
          "description":"Son symbole est Li et son découvreur est Arfvedson"
       },
@@ -40,7 +40,7 @@
       },
       {
          "name":"Azote",
-         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/azote.jpg",
+         "url":"https://raw.githubusercontent.com/Dunniii/Application3A/master/app/atomeImage/Azote.png",
          "numero":"7",
          "description":"Son symbole est N et son découvreur est Rutherford"
       },
