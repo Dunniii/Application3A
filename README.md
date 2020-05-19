@@ -28,10 +28,10 @@ https://github.com/Dunniii/Application3A/
 ### Second Ecran (Liste RecyclerView)
 
 - Affiche la liste des Pokemon
-<img src="screen/Screen2.png" width="540" height="960" alt="Screen2.png">
+<img src="screen/screen2.png" width="540" height="960" alt="screen2.png">
 
 ### Troisième Ecran (Details Elément)
 
 - Affiche le détail d'un élément de la liste
-<img src="screen/Screen3.png" width="540" height="960" alt="Screen3.png">
+<img src="screen/screen3.png" width="540" height="960" alt="screen3.png">
 
