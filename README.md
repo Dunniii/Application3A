@@ -30,3 +30,8 @@ Projet de troisième année à l'ESIEA. Le but de cette application est de regro
 
 ### Sauvegarde en cache
 <img src="screen/screen3.png" width="540" height="960" alt="screen3.png">
+
+### A finir 
+
+- Finir le splash screen 
+- Alimenter l'API
