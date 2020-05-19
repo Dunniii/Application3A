@@ -5,32 +5,38 @@
       {
          "name":"Hydrogène",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/1/",
-         "numero":"1"
+         "numero":"1",
+         "description":"Son symbole est H et son découvreur est Cavendish"
       },
       {
          "name":"Hélium",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/2/",
-         "numero":"2"
+         "numero":"2",
+         "description":"Son symbole est He et ses découvreurs sont Ramsay et Cleve"
       },
       {
          "name":"Lithium",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/3/",
-         "numero":"3"
+         "numero":"3",
+         "description":"Son symbole est Li et son découvreur est Arfvedson"
       },
       {
          "name":"Beryllium",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/4/",
-         "numero":"4"
+         "numero":"4",
+         "description":"Son symbole est Be et son découvreur est Vauquelin"
       },
       {
          "name":"Bore",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/5/",
-         "numero":"5"
+         "numero":"5",
+         "description":"Son symbole est B et ses découvreurs  sont Davy et Gay-Lussac"
       },
       {
          "name":"Carbone",
          "url":"https://github.com/Dunniii/Application3A/edit/master/atomeapi.json/6/",
-         "numero":"6"
+         "numero":"6",
+         "description":"Son symbole est C et son découvreur est inconnu"
       }
    ]
 }
