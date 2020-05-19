@@ -1,20 +1,20 @@
-package com.example.application3a;
+package com.example.application3a.presentation.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
+import com.example.application3a.Constants;
+//import com.example.application3a.ListAdapter;
+import com.example.application3a.R;
+import com.example.application3a.data.AtomeApi;
+import com.example.application3a.presentation.model.Atome;
+import com.example.application3a.presentation.model.RestAtomeResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -23,9 +23,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import android.content.SharedPreferences;
+
 import android.content.Context;
-import android.content.Intent;
 
 import java.lang.reflect.Type;
 import com.google.gson.reflect.TypeToken;
@@ -65,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 }
     private List<Atome> getDataFromCache(){
-        String jsonAtome =  sharedPreferences.getString(Constants.KEY_ATOME_LIST, null);
+        String jsonAtome =  sharedPreferences.getString( Constants.KEY_ATOME_LIST, null);
 
         if(jsonAtome == null){
             return null;

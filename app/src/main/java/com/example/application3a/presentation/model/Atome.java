@@ -1,4 +1,4 @@
-package com.example.application3a;
+package com.example.application3a.presentation.model;
 
 public class Atome {
         private String name;

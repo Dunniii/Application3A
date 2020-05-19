@@ -1,4 +1,4 @@
-package com.example.application3a;
+package com.example.application3a.presentation.model;
 
 import java.util.List;
 public class RestAtomeResponse {

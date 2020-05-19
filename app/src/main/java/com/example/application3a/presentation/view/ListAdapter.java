@@ -1,14 +1,15 @@
-package com.example.application3a;
-import java.util.ArrayList;
+package com.example.application3a.presentation.view;
 import java.util.List;
 
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.application3a.R;
+import com.example.application3a.presentation.model.Atome;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Atome> values;
@@ -23,7 +24,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         ViewHolder(View v) {
             super(v);
             layout = v;
-            txtHeader = (TextView) v.findViewById(R.id.firstLine);
+            txtHeader = (TextView) v.findViewById( R.id.firstLine);
             txtFooter = (TextView) v.findViewById(R.id.secondLine);
         }
     }
