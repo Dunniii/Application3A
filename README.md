@@ -1,43 +1,37 @@
-# Application3A
+# Atome Application
 Projet de troisième année à l'ESIEA. Le but de cette application est de regrouper tout les atomes du tableau des élements.
 
 
-## Présentation
-
-Simple projet démontrant l'utilisation de Clean Architecture et du pattern MVVM dans une application android codé en Kotlin.
-
-Cette application une liste d'atome et utilise l'API de Github permettant d'aller chercher mon fichier AtomeApi.json. L'API 
-sera complétée petit à petit.
-
-## Prérequis
-
+## Les Prérequis
 
 - Installation d'Android Studio
+- Connexion Internet pour utilisation de l'API
+
 https://github.com/Dunniii/Application3A/
 
-## Consignes respectées : 
+## Fonctionnalités et Conception
 
-- Clean Architecture & MVVM
 - Appels REST
-- Ecrans : 2 fragment et un SplashScreen non fini
-- Affichage d'une liste dans un RecyclerView
-- Affichage du détail d'un item de la liste
+- Affichage d'une liste avec RecyclerView
+- Affichage du détail d'un élément de la liste
+- Clean Architecture & MVC
+- Stockage en cache de la liste des élément et détails
+- Design
 
+## Screens
 
+### Premier Ecran (SplashScreen)
 
-## Fonctionnalités: 
+- Affiche  une liste
+<img src="screen/Screen.png" width="540" height="960" alt="Screen.png">
 
-### Premier écran 
+### Second Ecran (Liste RecyclerView)
 
-<img src="screen/screen1.png" alt="screen1.png">   
+- Affiche la liste des Pokemon
+<img src="screen/Screen2.png" width="540" height="960" alt="Screen2.png">
 
-### Ecran du détail du pokémon
+### Troisième Ecran (Details Elément)
 
-- Affiche les différentes informations sur le pokémon 
-- Puces type, weaknesses, previous evolution et next evolution sont cliquables 
-- Redirection en fonction de la puce  :
-	- Type, weaknesses : Vers la liste des pokémons du type selectionné 
-	- Evolution : Vers le détail du pokémon selectionné
-
-
+- Affiche le détail d'un élément de la liste
+<img src="screen/Screen3.png" width="540" height="960" alt="Screen3.png">
 
