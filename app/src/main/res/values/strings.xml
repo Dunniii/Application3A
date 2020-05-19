@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Atome Application</string>
-    <string name="imagedes">Atome1</string>
     <string name="bouton_retour">Retour</string>
-    <string name="imagedes2">Atome2</string>
+    <string name="imagedes">Atome</string>
+    <string name="imageicon">Atome2</string>
+
 
 </resources>

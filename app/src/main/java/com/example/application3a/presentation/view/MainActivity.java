@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.application3a.Constants;
 import com.example.application3a.Singletons;
+import android.content.Intent;
 import com.example.application3a.R;
 import com.example.application3a.data.AtomeApi;
 import com.example.application3a.presentation.model.Atome;
@@ -30,8 +31,6 @@ import android.content.Context;
 
 import java.lang.reflect.Type;
 import com.google.gson.reflect.TypeToken;
-
-
 
 import android.widget.Toast;
 
@@ -61,15 +60,15 @@ public class MainActivity extends AppCompatActivity {
     public void showList(List<Atome> atomeList){
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        ListAdapter mAdapter = new ListAdapter(atomeList, new ListAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Atome item) {
+                controller.onItemClick(item);
+            }
+        });
 
-        /*List<String> input = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
-            input.add("Test" + i);
-        }*/
-        mAdapter = new ListAdapter(atomeList);
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -79,4 +78,10 @@ public class MainActivity extends AppCompatActivity {
     public void showError(){
         Toast.makeText(getApplicationContext(),"API ERROR", Toast.LENGTH_SHORT).show();
     }
+    public void navigateToDetails(Atome atome) {
+        Intent intent = new Intent(MainActivity.this, DescriptionActivity.class);
+        intent.putExtra(Constants.EXTRA_ATOME, Singletons.getGson().toJson(atome));
+        this.startActivity(intent);
+    }
+
 }

@@ -4,6 +4,7 @@ public class Atome {
         private String name;
         private String url;
         private String numero;
+        private String description;
 
         public String getName() {
             return name;
@@ -12,6 +13,8 @@ public class Atome {
         public String getUrl() {
             return url;
         }
+        public String getDescription(){
+        return description; }
 }
 
 
